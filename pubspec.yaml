@@ -1,0 +1,49 @@
+name: helpity_app
+description: A platform connecting specially-abled users with nearby verified volunteers
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.22.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^3.4.0
+  google_maps_flutter_web: ^3.4.0
+  firebase_core: ^2.30.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^6.4.0
+  firebase_storage: ^11.0.0
+  firebase_messaging: ^15.2.5
+
+  provider: ^6.1.1
+  http: ^1.1.0
+  shared_preferences: ^2.2.2
+  intl: ^0.20.2
+
+  flutter_local_notifications: ^16.3.3
+
+dependency_overrides:
+  firebase_core_web: ^2.30.0
+  firebase_auth_web: ^5.0.0
+  firebase_messaging_web: ^3.8.7
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
